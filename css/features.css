@@ -85,6 +85,13 @@
     .features-grid {
         grid-template-columns: 1fr;
     }
+
+    .section-title {
+        font-size: 1.5rem; /* smaller size for mobile */
+        padding-bottom: 6px;
+        border-bottom-width: 1.5px;
+    }
 }
+
 
 
