@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css\nav.css" />
+    <link rel="stylesheet" href="css\home.css" />
+    <link rel="stylesheet" href="css\features.css" />
+    <link rel="stylesheet" href="css\how-it-works.css" />
+    <link rel="stylesheet" href="css\about_us.css" />
+    <link rel="stylesheet" href="css\contact_us.css" />
+
+    <link rel="icon" type="image/x-icon" href="img\logo-.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Gate</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <img src="img/logo-.png" class="navlogo">
+                <h4>Future Gate</h4>
+                <!-- Toggle Button for Mobile -->
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <!-- Navigation Links -->
+                <ul class="main-nav">
+                    <li><a class="a2" href="#home"><span>Home</span></a></li>
+                    <li><a class="a2" href="#features"><span>Our Features</span></a></li>
+                    <li><a class="a2" href="#work"><span>How it works</span></a></li>
+                    <li><a class="a2" href="#about_us"><span>About us</span></a></li>
+                    <li><a class="a2" href="#contact_us"><span>Contact us</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section  -->
+    <section id="home" class="home">
+        <div class="background-section"> </div> 
+        <div class="hometext">
+          <h2>Build Your Future Now 🚀</h2>
+          <p>The Ultimate Guide to Enhancing Your Skills, CV, and Finding the Best Opportunities!</p>
+          <div class="homebtn">
+            <button class="homebtn1 hb" type="button">
+              <a href="#Take_Action" class="btna1">Download Now</a>
+            </button>
+            <button class="homebtn2 hb" type="button">
+              <a href="#features" class="btna2">Learn more</a> <br>
+            </button>
+          </div>
+        </div>
+        <div class="homelogo">
+          <img src="img/screen1.png" class="hlogoo" alt="Home Image">
+          <img src="img/future gate screen.png" class="hlogo" alt="Home Image">
+          <img src="img/screen2.png" class="hlogooo" alt="Home Image">
+        </div>
+      </section> 
+  
+  
+  
+<!-- Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <h3 class="section-title">Our Features</h3>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="icon">🎯</div>
+                <h3>Discover Your Field</h3>
+                <p>Find the best field for you through career videos and detailed roadmaps.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">📚</div>
+                <h3>Training Courses</h3>
+                <p>Access top courses in technology with trusted institutions after choosing your field.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">📝</div>
+                <h3>Assessment Levels</h3>
+                <p>Take our three-level tests to evaluate your knowledge.</p>
+            </div>
+            <div class="feature-item">
+                <div class="images"><img src="img/chatbot.png" alt="ATS CV"></div>
+                <h3>AI-Powered ATS CV Check</h3>
+                <p>Upload your CV, get an ATS compatibility score, and receive AI-powered improvement tips.</p>
+            </div>
+            <div class="feature-item">
+              <div class="images"><img src="img/working-man.png" alt="Internship"></div>
+              <h3>Internship Opportunities</h3>
+                <p>Get access to verified internships that prepare you for the job market.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">🔔</div>
+                <h3>Push Up Notification</h3>
+                <p>Stay up to date with industry trends and opportunities.</p>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+
+
+<!-- how it work section -->
+   <section class="onboarding-container" id="work">
+<h2 style="text-align: center; color: #196AB3;">How It Works</h2>
+    <div class="section-steps">
+      <div class="steps" id="studentSteps">
+        <h3 style="color: #196AB3;">As Student</h3>
+        <div class="step active" onclick="changeStep(0, 'student')">
+          <div class="number">1</div>Download the app and create your account.
+        </div>
+        <div class="step" onclick="changeStep(1, 'student')">
+          <div class="number">2</div>Explore a wide range of internships tailored to you.
+        </div>
+        <div class="step" onclick="changeStep(2, 'student')">
+          <div class="number">3</div>Enhance your skills by taking courses.
+        </div>
+        <div class="step" onclick="changeStep(3, 'student')">
+          <div class="number">4</div>Optimize your CV to be ATS-friendly.
+        </div>
+        <div class="step" onclick="changeStep(4, 'student')">
+          <div class="number">5</div>Challenge yourself with interactive assessments.
+        </div>
+        <div class="step" onclick="changeStep(5, 'student')">
+          <div class="number">6</div>Build your professional profile.
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="img/Start page.svg" alt="" class="circle-svg" class="circle-svg" loading="lazy">  <!-- for background of the mobile -->
+        <img id="studentImage" src="img/mobile0.png"  class="app-img"> <!-- for the first mobile that appear-->
+      </div>
+    </div>
+
+    <div class="section-steps two">
+      <div class="image-container">
+        <img src="img/Start page.svg" alt="" class="circle-svg" class="circle-svg" loading="lazy">  <!-- for background of the mobile -->
+        <img id="companyImage" src="img/mobile0.png"  class="app-img"> <!-- for the first mobile that appear-->
+      </div>
+      <div class="steps" id="companySteps">
+        <h3 style="color: #196AB3;">As Company</h3>
+        <div class="step active" onclick="changeStep(0, 'company')">
+          <div class="number">1</div>Download the app and sign in.
+        </div>
+        <div class="step" onclick="changeStep(1, 'company')">
+          <div class="number">2</div>Access your Company dashboard.
+        </div>
+        <div class="step" onclick="changeStep(2, 'company')">
+          <div class="number">3</div>Post new internship opportunities.
+        </div>
+        <div class="step" onclick="changeStep(3, 'company')">
+          <div class="number">4</div>Review student applications in real-time.
+        </div>
+         <div class="step" onclick="changeStep(4, 'company')">
+          <div class="number">5</div>Track and manage accepted students.
+        </div>
+         <div class="step" onclick="changeStep(5, 'company')">
+          <div class="number">6</div>Promote your company through your profile.
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- About Us Section -->
+<section id="about_us" class="about_us">
+    <div class="container">
+        <h2 class="section-title">About Us</h2><br>
+        <div class="about-wrapper">
+            <div class="about-image">
+                <img src="img/about us.jpeg" alt="Career Path Ladder">
+            </div>
+            
+            <div class="about-text">
+                <p>
+                    Future Gate was created to bridge the gap between students and the professional world. 
+                    We provide students with the tools, resources, and opportunities needed to navigate their career path with confidence.
+                </p>
+                <p>
+                    With Future Gate, you can discover, learn, and grow all of these in one application.
+                </p>
+            </div>
+            
+        </div>
+        <p class="join-us">
+          <img src="img/logo-.png" alt="Join Us Icon">
+          Join us and build your future!
+      </p>
+    </div>
+</section>
+
+
+
+<!-- Contact Us Section -->
+<section id="contact_us" class="contact_us">
+    <div class="container">
+        <h3 class="section-title">Contact Us</h3><br>
+        <p class="contact-text" style="color: rgb(63, 98, 255);">Have questions? Reach out to us!</p>
+
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1Ao5SXDX49/" target="_blank" class="social-icon">
+                <img src="img/facebook.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://www.instagram.com/future_gate990?igsh=bWlqem1ibG1nb2dq" target="_blank" class="social-icon">
+                <img src="img/social.png" alt="Instagram" width="30">
+            </a>
+            <a href="mailto:mashrona12@gmail.com" class="social-icon">
+                <img src="img/gmail.png" alt="Gmail" width="30">
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+</script>
+
+
+
+      <script src="js\how-it-works.js"></script>
+
+</body>
+</html>

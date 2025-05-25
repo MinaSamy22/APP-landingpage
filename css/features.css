@@ -1,0 +1,289 @@
+/*--------------- Features Section ---------------------*/
+.features {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    padding: 80px 10%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(25, 106, 179, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(25, 106, 179, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #196AB3;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #196AB3;
+    display: inline-block;
+    padding-bottom: 8px;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #196AB3, #4A90E2);
+    transition: width 0.8s ease-out;
+}
+
+.features:hover .section-title::after {
+    width: 100%;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+/* Individual Feature Card */
+.feature-item {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(25, 106, 179, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(25, 106, 179, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.feature-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(25, 106, 179, 0.02) 0%, rgba(74, 144, 226, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* Enhanced Hover Effects */
+.feature-item:hover {
+    transform: translateY(-12px) rotateX(5deg);
+    box-shadow: 0px 20px 40px rgba(25, 106, 179, 0.15);
+    border-color: rgba(25, 106, 179, 0.2);
+}
+
+.feature-item:hover::before {
+    left: 100%;
+}
+
+.feature-item:hover::after {
+    opacity: 1;
+}
+
+/* Feature Icons with Enhanced Animation */
+.icon {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #196AB3;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item:hover .icon {
+    transform: scale(1.2) rotateY(360deg);
+    text-shadow: 0 4px 8px rgba(25, 106, 179, 0.3);
+    filter: drop-shadow(0 4px 8px rgba(25, 106, 179, 0.2));
+}
+
+/* Images Container Enhancement */
+.images {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(25, 106, 179, 0.1), rgba(74, 144, 226, 0.1));
+}
+
+.images::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #196AB3, #4A90E2);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.feature-item:hover .images {
+    transform: scale(1.15) rotateZ(5deg);
+    background: linear-gradient(135deg, rgba(25, 106, 179, 0.2), rgba(74, 144, 226, 0.2));
+}
+
+.feature-item:hover .images::before {
+    opacity: 0.1;
+}
+
+.images img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.feature-item:hover .images img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(25, 106, 179, 0.2));
+}
+
+/* Feature Titles with Enhanced Animation */
+.feature-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #196AB3;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item:hover h3 {
+    color: #0F4A8C;
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(25, 106, 179, 0.1);
+}
+
+/* Feature Descriptions with Smooth Animation */
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item:hover p {
+    color: #333;
+    transform: translateY(-1px);
+}
+
+/* Staggered Animation for Grid Items */
+.feature-item:nth-child(1) { animation: slideInUp 0.6s ease-out 0.1s both; }
+.feature-item:nth-child(2) { animation: slideInUp 0.6s ease-out 0.2s both; }
+.feature-item:nth-child(3) { animation: slideInUp 0.6s ease-out 0.3s both; }
+.feature-item:nth-child(4) { animation: slideInUp 0.6s ease-out 0.4s both; }
+.feature-item:nth-child(5) { animation: slideInUp 0.6s ease-out 0.5s both; }
+.feature-item:nth-child(6) { animation: slideInUp 0.6s ease-out 0.6s both; }
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* Pulse Animation for Icons on Load */
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.feature-item:nth-child(odd) .icon {
+    animation: iconPulse 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* Special Hover Effect for Specific Cards */
+.feature-item:nth-child(4):hover,
+.feature-item:nth-child(5):hover {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        padding-bottom: 6px;
+        border-bottom-width: 1.5px;
+    }
+
+    .feature-item {
+        padding: 25px 20px;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-8px) rotateX(2deg);
+    }
+
+    .icon {
+        font-size: 2.4rem;
+    }
+
+    .images {
+        width: 50px;
+        height: 50px;
+    }
+}

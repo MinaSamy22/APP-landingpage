@@ -1,0 +1,384 @@
+/* How It Works Section */
+.onboarding-container {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 80px;
+  margin-top: 100px;
+}
+
+.onboarding-container h2 {
+  text-align: left;
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.section-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.section-steps.two {
+  justify-content: flex-start;
+  gap: 80px;
+}
+
+.steps {
+  position: relative;
+  text-align: left;
+}
+
+.steps svg {
+  position: absolute;
+  z-index: -1;
+  left: 20px;
+  top: 90px;
+}
+
+.steps h3 {
+  color: #000000;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.step {
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  color: #888;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.step .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F2ECFF;
+  color: #196AB3;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  font-size: 26px;
+}
+
+.step.active .number {
+  background: #196AB3;
+  color: #ffffff;
+}
+
+.step.active {
+  color: #000000;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.image-container .circle-svg {
+  position: absolute;
+  width: 550px;
+  height: auto;
+  z-index: 1;
+  max-width: 100%;
+}
+
+.image-container .app-img {
+  position: relative;
+  z-index: 10;
+  width: 230px;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container .star-blue {
+  position: absolute;
+  left: 22%;
+}
+
+.image-container .star-yellow {
+  position: absolute;
+  top: 60px;
+  right: 16%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1226px) {
+  .onboarding-container h2 {
+    font-size: 40px;
+  }
+
+  .steps h3 {
+    font-size: 30px;
+  }
+
+  .step.active {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .step {
+    font-size: 20px;
+  }
+
+  .step .number {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+
+  .image-container .circle-svg {
+    width: 510px;
+  }
+
+  .image-container .app-img {
+    width: 213px;
+  }
+
+  .steps svg {
+    left: 17px;
+    height: 73%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .onboarding-container h2 {
+    font-size: 35px;
+  }
+
+  .steps h3 {
+    font-size: 24px;
+  }
+
+  .step.active {
+    font-size: 16px;
+  }
+
+  .step {
+    font-size: 14px;
+  }
+
+  .step .number {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+  
+  .section-steps.two {
+    gap: 38px;
+  }
+  
+  .image-container .circle-svg {
+    width: 380px;
+  }
+
+  .image-container .app-img {
+    width: 157px;
+  }
+
+  .steps svg {
+    left: 12px;
+    top: 68px;
+  }
+}
+
+@media (max-width: 767px) {
+  .onboarding-container {
+    padding: 0 23px;
+  }
+
+  .section-steps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .onboarding-container h2 {
+    font-size: 50px;
+  }
+
+  .steps h3 {
+    font-size: 35px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 600px; /* Increased container size for larger mobile display */
+    margin: 0 auto;
+  }
+  
+  .image-container .circle-svg {
+    width: 100%;
+    max-width: 600px; /* Significantly increased SVG background size from 430px to 600px */
+    min-width: 400px; /* Increased minimum size from 280px to 400px */
+  }
+  
+  .image-container .app-img {
+    width: 41.4%; /* Maintains proportion relative to SVG */
+    max-width: 248px; /* Increased mobile device size from 178px to 248px */
+    min-width: 166px; /* Increased minimum mobile size from 116px to 166px */
+  }
+  
+  .step.active {
+    font-size: 27px;
+  }
+
+  .step {
+    font-size: 24px;
+  }
+
+  .step .number {
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 19px;
+  }
+
+  .steps svg {
+    left: 17px;
+    top: 76px;
+    height: 76%;
+  }
+
+  .section-steps.two {
+    flex-direction: column-reverse;
+  }
+
+  .section-steps.two .image-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 570px) {
+  .steps h3 {
+    font-size: 35px;
+  }
+
+  .onboarding-container h2 {
+    font-size: 46px;
+  }
+
+  .step.active {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .step {
+    font-size: 18px;
+  }
+
+  .step .number {
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 19px;
+  }
+
+  .steps svg {
+    left: 15px;
+    top: 67px;
+  }
+
+  .step {
+    margin: 20px 0;
+  }
+
+  .section-steps {
+    gap: 30px;
+  }
+
+  .image-container .circle-svg {
+    width: 100%;
+    max-width: 500px; /* Increased SVG size from 350px to 500px for better visibility */
+    min-width: 380px; /* Increased minimum size from 280px to 380px */
+  }
+  
+  .image-container .app-img {
+    width: 41.4%;
+    max-width: 207px; /* Increased mobile device size from 145px to 207px */
+    min-width: 157px; /* Increased minimum mobile size from 116px to 157px */
+  }
+}
+
+@media (max-width: 480px) {
+  .steps h3 {
+    font-size: 29px;
+  }
+
+  .onboarding-container h2 {
+    font-size: 42px;
+  }
+
+  .step.active {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .step {
+    font-size: 14px;
+  }
+
+  .step .number {
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 18px;
+  }
+
+  .steps svg {
+    left: 15px;
+    top: 64px;
+  }
+
+  .step {
+    margin: 17px 0;
+  }
+
+  .section-steps {
+    gap: 30px;
+  }
+
+  .image-container .circle-svg {
+    width: 100%;
+    max-width: 460px; /* Increased SVG size from 320px to 460px for enhanced mobile experience */
+    min-width: 350px; /* Increased minimum size from 250px to 350px */
+  }
+  
+  .image-container .app-img {
+    width: 41.4%;
+    max-width: 190px; /* Increased mobile device size from 132px to 190px */
+    min-width: 145px; /* Increased minimum mobile size from 104px to 145px */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .image-container .circle-svg {
+    width: 100%;
+    max-width: 420px; /* Increased SVG size from 280px to 420px for very small screens */
+    min-width: 320px; /* Increased minimum size from 230px to 320px */
+  }
+  
+  .image-container .app-img {
+    width: 41.4%;
+    max-width: 174px; /* Increased mobile device size from 116px to 174px */
+    min-width: 132px; /* Increased minimum mobile size from 95px to 132px */
+  }
+}
