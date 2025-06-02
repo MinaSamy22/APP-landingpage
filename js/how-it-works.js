@@ -4,7 +4,7 @@ const studentImages = [
     "img/mobile1.png",
     "img/mobile2.png",
     "img/mobile3.png",
-    "img/mobile4.png",
+    "img/assss.png",
     "img/mobile5.png",
   ];
   
